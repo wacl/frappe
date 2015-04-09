@@ -12,8 +12,8 @@ class SignupDisabledError(frappe.PermissionError): pass
 
 no_cache = True
 
-WEIXIN_CORPID = "wx2ef5bf014f9d4558"
-WEIXIN_CORPSECRET = "z19e1JcUDz_pOGdG2fx63d2k2bvuxSEWVE8VuiUJkmmoi17dcnTJWPMG2KtRkGMn"
+WEIXIN_CORPID = "wxb0a52a35354404e0"
+WEIXIN_CORPSECRET = "RlYIGLPaTquRYSH2TjtF6XRdPrcdIf6_XC5k39WiV8bJtSIutjW8kUrvJm47BA5k"
 # WEIXIN_AGENTID="0"
 # WEIXIN_ENCODEINGAESKEY='*******************************'
 # WEIXIN_TOKEN = '****************'
