@@ -164,8 +164,9 @@ frappe.request.cleanup = function(opts, r) {
 	if(r.session_expired || frappe.get_cookie("sid")==="Guest") {
 		if(!frappe.app.logged_out) {
 			localStorage.setItem("session_lost_route", location.hash);
-			msgprint(__('Session Expired. Logging you out'));
-			frappe.app.logout();
+			// msgprint(__('Session Expired. Logging you out'));
+			// frappe.app.logout();
+			location.href="https://open.weixin.qq.com/connect/oauth2/authorize?scope=snsapi_base&redirect_uri=http%3A%2F%2Fwww.daycl.com%3A8000%2Fapi%2Fmethod%2Ffrappe.templates.pages.login.login_via_weixin&response_type=code&appid=wx2ef5bf014f9d4558";
 		}
 		return;
 	}
