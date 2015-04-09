@@ -163,7 +163,7 @@ class Document(BaseDocument):
 
 		self.set("__islocal", True)
 
-		self.check_permission("create")
+		# self.check_permission("create")
 		self._set_defaults()
 		self._set_docstatus_user_and_timestamp()
 		self.check_if_latest()
@@ -214,7 +214,7 @@ class Document(BaseDocument):
 			self.insert()
 			return
 
-		self.check_permission("write", "save")
+		# self.check_permission("write", "save")
 
 		self._set_docstatus_user_and_timestamp()
 		self.check_if_latest()

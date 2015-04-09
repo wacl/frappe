@@ -147,7 +147,6 @@ def login_via_github(code):
 
 @frappe.whitelist(allow_guest=True)
 def login_via_weixin(code):
-	print WEIXIN_CORPSECRET
 	provider = 'weixin'
 	token = getAccessToken()
 	url = WEIXIN_USERINFO_ADDR + "access_token=" + token + "&code=" + code
