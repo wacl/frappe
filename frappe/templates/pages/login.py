@@ -13,7 +13,7 @@ class SignupDisabledError(frappe.PermissionError): pass
 no_cache = True
 
 WEIXIN_CORPID = "wxb0a52a35354404e0"
-WEIXIN_CORPSECRET = ""
+WEIXIN_CORPSECRET = frappe.local.conf.wx_secret
 # WEIXIN_AGENTID="0"
 # WEIXIN_ENCODEINGAESKEY='*******************************'
 # WEIXIN_TOKEN = '****************'
