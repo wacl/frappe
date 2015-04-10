@@ -413,7 +413,7 @@
   {
    "fieldname": "fb_username", 
    "fieldtype": "Data", 
-   "label": "Facebook Username", 
+   "label": "\u5fae\u4fe1\u540d", 
    "no_copy": 1, 
    "permlevel": 0, 
    "read_only": 1
@@ -421,7 +421,7 @@
   {
    "fieldname": "fb_userid", 
    "fieldtype": "Data", 
-   "label": "Facebook User ID", 
+   "label": "\u5fae\u4fe1\u53f7", 
    "no_copy": 1, 
    "permlevel": 0, 
    "read_only": 1
@@ -429,6 +429,7 @@
   {
    "fieldname": "google_userid", 
    "fieldtype": "Data", 
+   "hidden": 1, 
    "label": "Google User ID", 
    "no_copy": 1, 
    "permlevel": 0, 
@@ -437,12 +438,14 @@
   {
    "fieldname": "column_break_49", 
    "fieldtype": "Column Break", 
+   "hidden": 1, 
    "permlevel": 0, 
    "precision": ""
   }, 
   {
    "fieldname": "github_userid", 
    "fieldtype": "Data", 
+   "hidden": 1, 
    "label": "Github User ID", 
    "no_copy": 1, 
    "permlevel": 0, 
@@ -451,6 +454,7 @@
   {
    "fieldname": "github_username", 
    "fieldtype": "Data", 
+   "hidden": 1, 
    "label": "Github Username", 
    "no_copy": 1, 
    "permlevel": 0, 
@@ -464,7 +468,7 @@
  "issingle": 0, 
  "istable": 0, 
  "max_attachments": 5, 
- "modified": "2015-03-24 17:56:43.743847", 
+ "modified": "2015-04-10 07:52:02.678683", 
  "modified_by": "Administrator", 
  "module": "Core", 
  "name": "User", 
