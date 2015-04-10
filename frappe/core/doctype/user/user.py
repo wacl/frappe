@@ -79,7 +79,7 @@ class User(Document):
 		new_password = self.clear_new_password()
 		clear_notifications(user=self.name)
 		frappe.clear_cache(user=self.name)
-		self.send_password_notifcation(new_password)
+		# self.send_password_notifcation(new_password)
 
 	def share_with_self(self):
 		if self.user_type=="System User":
