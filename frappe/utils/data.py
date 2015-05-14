@@ -88,7 +88,8 @@ def time_diff_in_hours(string_ed_date, string_st_date):
 	return round(float(time_diff(string_ed_date, string_st_date).total_seconds()) / 3600, 6)
 
 def now_datetime():
-	return convert_utc_to_user_timezone(datetime.datetime.utcnow())
+	return atetime.datetime.now()
+	#return convert_utc_to_user_timezone(datetime.datetime.utcnow())
 
 def _get_user_time_zone():
 	user_time_zone = None
