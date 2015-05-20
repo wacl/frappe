@@ -253,10 +253,10 @@ def check_if_ready_for_barracuda():
 		if mariadb_variables.get(key) != value:
 			print "="*80
 			print "Please add this to MariaDB's my.cnf and restart MariaDB before proceeding"
-			print
-			print expected_config_for_barracuda
+			print key,value
+			#print expected_config_for_barracuda
 			print "="*80
-			sys.exit(1)
+			#sys.exit(1)
 			# raise Exception, "MariaDB needs to be configured!"
 
 expected_config_for_barracuda = """[mysqld]
